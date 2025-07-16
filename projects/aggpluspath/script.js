@@ -29,7 +29,7 @@ function analyzeData(response) {
 
     const baseUrl = URLCMS;
     const bearerToken = token;
-    const items = response.data.items;
+    const items = response.data.items.sort((a, b) => b.id - a.id);
 
     function findAllByKeys(obj, keysToFind) {
         const results = [];
