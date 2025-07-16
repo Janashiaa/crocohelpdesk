@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Slot Test Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="front.js" defer></script>
+</head>
+
+<body>
+    <div class="back_button" onclick="goback()"></div>
+    <div class="container">
+        <h1>Endpoint Tester</h1>
+        <h5>Deposit bonus 100/500/1000 EGT Interactive</h5>
+
+        <div class="input-group">
+            <label for="idInput">Enter campaign group ID:</label>
+            <div class="input-row">
+                <input type="number" id="idInput" maxlength="10" inputmode="numeric" pattern="\d*" autocomplete="off"
+                    placeholder="Promotion group ID">
+                <button id="startTestBtn">Start Testing</button>
+            </div>
+        </div>
+
+        <div class="checklist">
+            <div class="result_name">Test Results</div>
+            <ul id="testResults">
+                <li class="pass">✔ Ready to start, waiting for promotion id</li>
+                <!-- <li class="pass">✅ Login successful</li>
+                <li class="fail">❌ Slot not found</li>
+                <li class="pass">✔ Bet option clicked</li>
+                <li class="fail">✗ Spin button unresponsive</li>
+                <li class="warn">⚠️ Unstable network detected</li> -->
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
