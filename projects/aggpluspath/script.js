@@ -155,6 +155,14 @@ async function startProcess() {
     }
 }
 
+function togglePassword() {
+    const passwordInput = document.getElementById("password-input");
+    const toggleBtn = document.querySelector(".toggle-password");
+    const isHidden = passwordInput.type === "password";
+    passwordInput.type = isHidden ? "text" : "password";
+    toggleBtn.textContent = isHidden ? "🙈" : "👁";
+}
+
 function goback() {
     window.location.href = "../../../index.html"
 }
