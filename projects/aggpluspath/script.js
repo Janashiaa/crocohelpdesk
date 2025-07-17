@@ -122,6 +122,8 @@ function analyzeData(response) {
 
 
 async function startProcess() {
+    document.querySelector(".start_button").disabled = true;
+    document.querySelector(".start_button").style.backgroundColor = "#7096ce";
     const email = document.querySelector(".emailCMS").value
     const password = document.querySelector(".passwordCMS").value
     const loginUrl = 'https://internal-cms-back.crocobet.com/auth/login';

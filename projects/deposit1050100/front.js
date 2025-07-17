@@ -4,8 +4,8 @@ let signInCount = 0;
 async function loginAndGetToken() {
     const loginUrl = 'https://internal-cms-back.crocobet.com/auth/login';
     const loginPayload = {
-        username: 'Djanashia',
-        password: 'Davit1234'
+        username: 'user',
+        password: 'pass'
     };
 
     try {

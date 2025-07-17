@@ -78,7 +78,7 @@ body {
     border-radius: 6px;
     margin-top: 10px;
     cursor: pointer;
-    transition: background-color 0.2s;
+    transition: 0.2s ease;
 }
 
 .login-card button:hover {
